@@ -74,24 +74,24 @@ body nav ul li a, body nav ul li a:visited {
     right: 12vw;
 }
 
-/* styles the link under the search box */
+/* styles and positions the link under the search box */
 
 p {
     font-size: .7rem;
     position: relative;
     display: inline-block;
     color: blue;
-    top: 25px;
-    left: 30px;
+    top: 10vw;
+    left: 12vw;
 }
-
+/* styles and places the footer */
 footer{
     background-color: rgb(242, 242, 242);
     position: fixed;
     bottom: 0;
     width: 100vw;
     left: 0;
-    height: 5vh;
+    height: 10vw;
 }
 footer nav ul li a {
     color:  #70757a;
@@ -100,6 +100,7 @@ footer nav ul li a {
     position: fixed;
     bottom: 0;   
 }
+/* places and styles the elements in the footer */
 #ad {
     left: 1vw;
 }
@@ -107,11 +108,16 @@ footer nav ul li a {
     left: 25vw;
 }
 #how {
-    left: 35vw;
+    left: 55%;
     bottom: 5vw;
 }
 #carbon {
-    left: 18vw;
+    position: absolute;
+    left: 2.5vw;
+    bottom: 5vw;
+}
+#carbon img {
+    height: 14px;
 }
 #privacy {
     left: 45vw;
@@ -121,4 +127,98 @@ footer nav ul li a {
 }
 #settings {
     right: 10vw;
+}
+/* optimization for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+    #about, #store, #gmail, #imges {
+        font-size: .8rem;
+        position: absolute;
+        top: 1.8vw;
+    }
+    #about {
+        left: 2vw;
+    }
+    #store {
+        left: 6vw;
+    }
+    #gmail {
+        left: 79vw;
+    }
+    #imges {
+        left: 83vw;
+    }
+    #apps {
+        position: relative;
+        left: 16.5vw;
+        bottom: .5vw;
+    }   
+    #signin {
+        font-size: .9rem;
+        padding: 10px 15px;
+        min-width: 100px;
+        max-height: 40px;
+        top: 1vw;
+        position: absolute;
+        text-align: center;
+    }
+    .googlelogo {
+        margin: 60px auto 30px;
+    }
+    .search {
+        width: 45vw;
+    }
+    .gsearch, .lucky {
+        min-width: 5vw;
+        font-size: .8rem;
+        position: absolute;
+        top: 21vw;
+    }
+    .gsearch {
+        left: 38vw;
+    }
+    .lucky {
+        right: 38vw;
+    }
+    p {
+        font-size: .8rem;
+        position: fixed;
+        display: inline-block;
+        color: blue;
+        top: 25vw;
+        left: 38vw;
+    }
+    footer{
+        height: 3vw;
+    }
+    footer nav ul li a {
+        bottom: 1vw;
+        font-size: .8rem;
+    }
+    #ad {
+        left: 2vw;
+    }
+    #biz {
+        left: 11vw;
+    }
+    #how {
+        bottom: 1vw;
+        left: 18.5vw;
+    }
+    #privacy {
+        left: 83vw;
+    }
+    #terms {
+        right: 8vw;
+    }
+    #settings {
+        right: 2vw;
+    }
+    #carbon {
+        position: absolute;
+        bottom: 1vw;
+        left: 43vw;
+    }
+    #carbon img {
+        margin-right: 7px;
+    }
 }
