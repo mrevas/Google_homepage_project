@@ -1,0 +1,17 @@
+.googlelogo, .search, .gsearch, .lucky {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.search {
+    width: 35vw;
+}
+.gsearch {
+    position: relative;
+    right: 100px;
+}
+.lucky {
+    position: relative;
+    left: 100px;
+    bottom: 29px;
+}
