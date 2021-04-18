@@ -1,3 +1,45 @@
+/* positions and styles the nav bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+}
+li {
+    display: inline-block;
+}
+#about, #store, #gmail, #imges {
+font-size: .7rem;
+}
+#about, #store, #gmail, #imges, #apps, #logn {
+    position: relative;
+}
+#gmail, #imges {
+    left: 36vw;
+}
+button {
+    cursor: pointer;
+    background: none;
+    padding: 0%;
+    border: none;
+    position: relative;
+    left: 80vw;
+    bottom: 2.5vh;
+}
+
+/* styles the links */
+
+a,a:visited {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* positions the logo, search bar and buttons */
+
 .googlelogo, .search, .gsearch, .lucky {
     margin-left: auto;
     margin-right: auto;
