@@ -1,5 +1,8 @@
 /* positions and styles the nav bar */
 
+a,button, input[type="submit"] {
+    cursor: pointer;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -11,32 +14,38 @@ li {
 #about, #store, #gmail, #imges {
 font-size: .7rem;
 }
-#about, #store, #gmail, #imges, #apps, #logn {
+#about, #store, #gmail, #imges {
     position: relative;
-    margin-left: 2px;
+
 }
 #gmail, #imges {
-    left: 25vw;
+    left: 10vw;
 }
-button {
-    cursor: pointer;
+#apps-button {
     background: none;
     padding: 0%;
     border: none;
-    position: relative;
-    left: 75vw;
-    bottom: 2.5vh;
-    margin-left: 7px;
+    position: absolute;
+    top: 2vw;
+    right: 27vw;
 }
+#signin {
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    font-size: .7rem;
+    background-color: #1a73e8;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
 
 /* styles the links */
 
-a,a:visited {
+body nav ul li a, body nav ul li a:visited {
     text-decoration: none;
-    color: #000;
-}
-a:hover {
-    text-decoration: underline;
     color: #000;
 }
 
@@ -65,3 +74,51 @@ a:hover {
     right: 12vw;
 }
 
+/* styles the link under the search box */
+
+p {
+    font-size: .7rem;
+    position: relative;
+    display: inline-block;
+    color: blue;
+    top: 25px;
+    left: 30px;
+}
+
+footer{
+    background-color: rgb(242, 242, 242);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    height: 5vh;
+}
+footer nav ul li a {
+    color:  #70757a;
+    font-size: .7rem;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;   
+}
+#ad {
+    left: 1vw;
+}
+#biz {
+    left: 25vw;
+}
+#how {
+    left: 35vw;
+    bottom: 5vw;
+}
+#carbon {
+    left: 18vw;
+}
+#privacy {
+    left: 45vw;
+}
+#terms {
+    right: 28vw;
+}
+#settings {
+    right: 10vw;
+}
