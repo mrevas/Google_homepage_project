@@ -1,5 +1,7 @@
 /* positions and styles the nav bar */
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 a,button, input[type="submit"] {
     cursor: pointer;
 }
@@ -58,7 +60,13 @@ body nav ul li a, body nav ul li a:visited {
     top: 3vh;
 }
 .search {
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    height: 7vw;
+    /* height: 44px; */
     width: 90vw;
+    border-radius: 15px;
 }
 .gsearch, .lucky {
     max-width: 35vw;
@@ -128,10 +136,14 @@ footer nav ul li a {
 #settings {
     right: 10vw;
 }
+
+#hideit {
+    display: none;
+}
 /* optimization for screens larger than 1200px */
 @media screen and (min-width: 1200px) {
     #about, #store, #gmail, #imges {
-        font-size: .8rem;
+        font-size: .9rem;
         position: absolute;
         top: 1.8vw;
     }
@@ -169,9 +181,16 @@ footer nav ul li a {
     }
     .gsearch, .lucky {
         min-width: 5vw;
-        font-size: .8rem;
+        font-size: .9rem;
         position: absolute;
         top: 21vw;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial, sans-serif;
+        padding: 0 16px;
+
     }
     .gsearch {
         left: 38vw;
@@ -220,5 +239,24 @@ footer nav ul li a {
     }
     #carbon img {
         margin-right: 7px;
+    }
+    #hideit {
+        display: inline-block;
+    }
+    .search-icon {
+        position: relative;
+        display: inline-block;
+        left: 27.5vw;
+        bottom: 1.8vw;
+        color: #9aa0a6;
+    }
+    .search {
+        background: #fff;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        height: 7vw;
+        height: 44px;
+        width: 45vw;
+        border-radius: 24px;
     }
 }
