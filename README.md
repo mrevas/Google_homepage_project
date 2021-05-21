@@ -1,1 +1,1 @@
-This is Marc's first coding project!!
+Recreating the Google homepage with just HTML and CSS
